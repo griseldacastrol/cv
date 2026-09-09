@@ -1,95 +1,152 @@
 body {
-
+  margin: 0;
+  background-color: #e8eef4;
   }
 
 /****************   Nav Section **********************/
 nav {
-	
+	background-color: #accbea;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-size: 18px;
 }
 
 /***********************  Footer Section   **************************/
 footer {
-	
+	background-color: #accbea;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
 }
 
 /*********** Splash Page ************************/
 header {
-
+  text-align: center;
+  padding: 30px;
+  background-color: #e8eef4
 }
 
 header h1 {
-  
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  color: #000000;
 }
 
 header img {
+  border-radius: 50%;
 }
 
 .address {
- 
+ text-align: center;
+ font-style: italic;
 }
 
 .tagline {
-  
+  text-align: center;
+  padding: 0 20px;
 }
 
 /************* Sections ********************/
 hr {
+  border: 1px solid #accbea;
+}
 
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section h2 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
 }
 
 section h3 {
-  
-}
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+} 
 
 section dl {
-  
+  display: grid;
+  grid-template-columns: 450px 250px;
+  column-gap: 10px;
+  row-gap: 5px;
+  justify-content: center;
 }
 
 section ul {
-
+  list-style-type: square;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 section a {
-
+  color:#000000;
+  text-decoration: none;
 }
 
 section a:hover {
+  color: #000000;
 }
 
 /**************   Projects   *****************/
 .three-col {
-	
+	display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
-
+.card h3 {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .card img {
-
+  width: 250%;
+  height: 150px;
+  object-fit: contain;
+  max-width: 100%;
 }
 
 .card {
-  
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px #ccc;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 /**************   Responsiveness   *****************/
 @media (max-width: 680px) {
     nav {
-      
+      flex-direction: column;
+      align-items: center;
     }
 
     .three-col {
-      
+      grid-template-columns: 1fr;
     }
 }
 
 /**************   Contact Page   *****************/
 .one-col {
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 input {
-  
-
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
 }
 
 textarea {
-   
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;  
 }
