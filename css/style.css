@@ -82,6 +82,11 @@ section ul {
   margin: 0 auto;
 }
 
+.skills {
+  columns: 2;
+  column-gap: 60px;
+}
+
 section a {
   color:#000000;
   text-decoration: none;
